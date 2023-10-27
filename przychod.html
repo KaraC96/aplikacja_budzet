@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Zarządzanie budżetem domowym</title>
+    <meta name="description" content="Aplikacja do zarządzania budżetem domowym.">
+    <meta name="keywords" content="przychody, wydatki, budżet, dom">
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav id="topnav">
+                <ul class="menu">
+                    <li><a href="home.html">Strona główna</a></li>
+                    <li><a href="przychod.html">Dodaj przychód</a></li>
+                    <li><a href="wydatek.html">Dodaj wydatek</a></li>
+                    <li><a href="bilans.html">Przeglądaj bilans</a></li>
+                    <li><a href="ustawienia.html">Ustawienia</a></li>
+                    <li><a href="index.html">Wyloguj się</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content1">
+                <form autocomplete="off">
+                    <div class="title">Dodaj przychód</div>
+                    <div class="label_cash">
+                        <label>Kwota:</label>
+                    </div>
+                    <div class="label_input">
+                        <input id="data" type="text" placeholder=" " />
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="label_cash">
+                        <label for="cost">Data:</label>
+                    </div>
+                    <div class="label_input">
+                        <input id="data" type="date" placeholder=" " />
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="label_input">
+                        <input id="cost" type="checkbox" name="przychod" value="wynagrodzenie" />
+                        <label for="cost">Wynagrodzenie</label>
+                    </div>
+                    <div class="label_input">
+                        <input id="cost" type="checkbox" name="przychod" value="odsetki" />
+                        <label for="cost">Odsetki bankowe</label>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="label_input">
+                        <input id="cost" type="checkbox" name="przychod" value="allegro" />
+                        <label for="cost">Sprzedaż na allegro</label>
+                    </div>
+                    <div class="label_inne">
+                        <input id="cost" type="checkbox" name="przychod" value="Inna" />
+                        <label for="cost">Inna (podaj jaka):</label>
+                        <input id="inne" type="text" placeholder=" " />
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="label_button">
+                        <input id="przycisk" type="submit" value="Dodaj">
+                    </div>
+                    <div class="label_button">
+                        <input id="przycisk" type="reset" value="Anuluj">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
